@@ -18,6 +18,12 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'user_id')->textInput() ?>
 
+    <?= $form->field($model, 'cat_id')->textInput() ?>
+
+    <?= $form->field($model, 'status')->dropDownList([ 'empty' => 'Empty', 'in progress' => 'In progress', 'done' => 'Done', ], ['prompt' => '']) ?>
+
+    <?= $form->field($model, 'level')->textInput() ?>
+
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>

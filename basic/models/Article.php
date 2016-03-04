@@ -11,7 +11,11 @@ use Yii;
  * @property string $name
  * @property string $description
  * @property integer $user_id
+ * @property integer $cat_id
+ * @property string $status
+ * @property integer $level
  *
+ * @property Category $cat
  * @property Users $user
  */
 class Article extends \yii\db\ActiveRecord
@@ -30,8 +34,9 @@ class Article extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'description', 'user_id'], 'required'],
-            [['user_id'], 'integer'],
+            [['name', 'description', 'user_id', 'cat_id', 'level'], 'required'],
+            [['user_id', 'cat_id', 'level'], 'integer'],
+            [['status'], 'string'],
             [['name'], 'string', 'max' => 100],
             [['description'], 'string', 'max' => 255]
         ];
@@ -47,7 +52,18 @@ class Article extends \yii\db\ActiveRecord
             'name' => Yii::t('app', 'Name'),
             'description' => Yii::t('app', 'Description'),
             'user_id' => Yii::t('app', 'User ID'),
+            'cat_id' => Yii::t('app', 'Cat ID'),
+            'status' => Yii::t('app', 'Status'),
+            'level' => Yii::t('app', 'Level'),
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCat()
+    {
+        return $this->hasOne(Category::className(), ['id' => 'cat_id']);
     }
 
     /**
