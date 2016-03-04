@@ -37,7 +37,9 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'Blog', 'url' => ['/blog/index']],
+            ['label' => 'PDP Articles', 'url' => ['/blog/index']],
+            ['label' => 'Users', 'url' => ['/user/index']],
+            ['label' => 'Category', 'url' => ['/category/index']],
             ['label' => 'About', 'url' => ['/site/about']],
             ['label' => 'Contact', 'url' => ['/site/contact']],
             Yii::$app->user->isGuest ? (
