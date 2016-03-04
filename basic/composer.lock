@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bca05b1961ebc3990616c8b3948df353",
-    "content-hash": "a412b94eb22713cec715d3adb3079f94",
+    "hash": "13016488704648b79cbbc9b9bc9b8511",
+    "content-hash": "1d3de651e1d36b42d5eaa6cbbeacdb5f",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -300,16 +300,16 @@
         },
         {
             "name": "fxp/composer-asset-plugin",
-            "version": "v1.1.1",
+            "version": "v1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/francoispluchino/composer-asset-plugin.git",
-                "reference": "daca454b94539a4e6d30937dfc6b817eceb03f28"
+                "reference": "bae7a15712e9339a2439aeca3b7c5ecf65b087d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/francoispluchino/composer-asset-plugin/zipball/daca454b94539a4e6d30937dfc6b817eceb03f28",
-                "reference": "daca454b94539a4e6d30937dfc6b817eceb03f28",
+                "url": "https://api.github.com/repos/francoispluchino/composer-asset-plugin/zipball/bae7a15712e9339a2439aeca3b7c5ecf65b087d1",
+                "reference": "bae7a15712e9339a2439aeca3b7c5ecf65b087d1",
                 "shasum": ""
             },
             "require": {
@@ -352,7 +352,7 @@
                 "npm",
                 "package"
             ],
-            "time": "2015-11-20 14:58:24"
+            "time": "2016-02-25 16:35:08"
         },
         {
             "name": "swiftmailer/swiftmailer",
