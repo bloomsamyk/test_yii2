@@ -2,6 +2,7 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/basic/vendor/amnah/yii2-user" />
       <excludeFolder url="file://$MODULE_DIR$/basic/vendor/bower/bootstrap" />
       <excludeFolder url="file://$MODULE_DIR$/basic/vendor/bower/bower-asset" />
       <excludeFolder url="file://$MODULE_DIR$/basic/vendor/bower/jquery" />
@@ -17,6 +18,7 @@
       <excludeFolder url="file://$MODULE_DIR$/basic/vendor/phpspec/php-diff" />
       <excludeFolder url="file://$MODULE_DIR$/basic/vendor/swiftmailer/swiftmailer" />
       <excludeFolder url="file://$MODULE_DIR$/basic/vendor/yiisoft/yii2" />
+      <excludeFolder url="file://$MODULE_DIR$/basic/vendor/yiisoft/yii2-authclient" />
       <excludeFolder url="file://$MODULE_DIR$/basic/vendor/yiisoft/yii2-bootstrap" />
       <excludeFolder url="file://$MODULE_DIR$/basic/vendor/yiisoft/yii2-codeception" />
       <excludeFolder url="file://$MODULE_DIR$/basic/vendor/yiisoft/yii2-composer" />
@@ -30,6 +32,7 @@
     <orderEntry type="module-library">
       <library name="PHP">
         <CLASSES>
+          <root url="file://$MODULE_DIR$/basic/vendor/amnah/yii2-user" />
           <root url="file://$MODULE_DIR$/basic/vendor/bower/bootstrap" />
           <root url="file://$MODULE_DIR$/basic/vendor/bower/bower-asset" />
           <root url="file://$MODULE_DIR$/basic/vendor/bower/jquery" />
@@ -45,6 +48,7 @@
           <root url="file://$MODULE_DIR$/basic/vendor/phpspec/php-diff" />
           <root url="file://$MODULE_DIR$/basic/vendor/swiftmailer/swiftmailer" />
           <root url="file://$MODULE_DIR$/basic/vendor/yiisoft/yii2" />
+          <root url="file://$MODULE_DIR$/basic/vendor/yiisoft/yii2-authclient" />
           <root url="file://$MODULE_DIR$/basic/vendor/yiisoft/yii2-bootstrap" />
           <root url="file://$MODULE_DIR$/basic/vendor/yiisoft/yii2-codeception" />
           <root url="file://$MODULE_DIR$/basic/vendor/yiisoft/yii2-composer" />
@@ -54,6 +58,7 @@
           <root url="file://$MODULE_DIR$/basic/vendor/yiisoft/yii2-swiftmailer" />
         </CLASSES>
         <SOURCES>
+          <root url="file://$MODULE_DIR$/basic/vendor/amnah/yii2-user" />
           <root url="file://$MODULE_DIR$/basic/vendor/bower/bootstrap" />
           <root url="file://$MODULE_DIR$/basic/vendor/bower/bower-asset" />
           <root url="file://$MODULE_DIR$/basic/vendor/bower/jquery" />
@@ -69,6 +74,7 @@
           <root url="file://$MODULE_DIR$/basic/vendor/phpspec/php-diff" />
           <root url="file://$MODULE_DIR$/basic/vendor/swiftmailer/swiftmailer" />
           <root url="file://$MODULE_DIR$/basic/vendor/yiisoft/yii2" />
+          <root url="file://$MODULE_DIR$/basic/vendor/yiisoft/yii2-authclient" />
           <root url="file://$MODULE_DIR$/basic/vendor/yiisoft/yii2-bootstrap" />
           <root url="file://$MODULE_DIR$/basic/vendor/yiisoft/yii2-codeception" />
           <root url="file://$MODULE_DIR$/basic/vendor/yiisoft/yii2-composer" />
