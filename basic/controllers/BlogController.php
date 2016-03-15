@@ -41,6 +41,23 @@ class BlogController extends Controller
         ]);
     }
 
+
+    /**
+     * Lists all Article models.
+     * @return mixed
+     */
+    public function actionList()
+    {
+        $dataProvider = new ActiveDataProvider([
+            'query' => Article::find(),
+        ]);
+
+        return $this->render('list', [
+            'dataProvider' => $dataProvider,
+        ]);
+    }
+
+
     /**
      * Displays a single Article model.
      * @param integer $id
