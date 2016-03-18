@@ -1,9 +1,7 @@
 <?php
 
 use yii\helpers\Html;
-use yii\grid\GridView;
-use yii\widgets\ListView;
-use yii\bootstrap\DatePicker;
+use yii\widgets\LinkPager;
 use app\models\Article;
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
@@ -16,11 +14,29 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <?php
 $items = $dataProvider->getModels();
+
+
+/** @var Article $item */
 foreach ($items as $item) {
     ?>
     <p><?=$item->name?></p>
+    <p><?=$item->description?></p>
+    <p>D<?=$item->level?></p>
+    <?= Html::a(Yii::t('app', 'View'), ['blog/show?id='.$item->id], ['class' => 'btn']) ?>
     <?php
-}/*
+}
+?>
+
+    <p>
+        <?= Html::a(Yii::t('app', 'Articles'), ['blog/list'], ['class' => 'btn']) ?>
+    </p>
+
+    <?php
+
+    echo LinkPager::widget([
+        'pagination' => $dataProvider->getPagination(),
+    ]);
+/*
 ?>
 
 

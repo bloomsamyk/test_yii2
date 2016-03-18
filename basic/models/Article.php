@@ -35,10 +35,9 @@ class Article extends \yii\db\ActiveRecord
     {
         return [
             [['name', 'description', 'user_id', 'cat_id', 'level'], 'required'],
+            [['description', 'status'], 'string'],
             [['user_id', 'cat_id', 'level'], 'integer'],
-            [['status'], 'string'],
-            [['name'], 'string', 'max' => 100],
-            [['description'], 'string', 'max' => 255]
+            [['name'], 'string', 'max' => 100]
         ];
     }
 

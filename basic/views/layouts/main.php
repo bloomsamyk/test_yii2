@@ -37,7 +37,7 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'PDP Articles', 'url' => ['/blog/index']],
+            ['label' => 'PDP Articles', 'url' => ['/blog/list']],
             ['label' => 'Users', 'url' => ['/user/index']],
             ['label' => 'Category', 'url' => ['/category/index']],
             ['label' => 'About', 'url' => ['/site/about']],

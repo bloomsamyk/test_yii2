@@ -5,7 +5,6 @@ namespace app\controllers;
 use Yii;
 use app\models\Article;
 use yii\data\ActiveDataProvider;
-use yii\data\Pagination;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -13,7 +12,7 @@ use yii\filters\VerbFilter;
 /**
  * BlogController implements the CRUD actions for Article model.
  */
-class BlogController extends Controller
+class AdminController extends Controller
 {
     public function behaviors()
     {
@@ -51,12 +50,10 @@ class BlogController extends Controller
     {
         $dataProvider = new ActiveDataProvider([
             'query' => Article::find(),
-            'pagination' => array('pageSize' => 10),
         ]);
 
         return $this->render('list', [
             'dataProvider' => $dataProvider,
-
         ]);
     }
 
@@ -69,18 +66,6 @@ class BlogController extends Controller
     public function actionView($id)
     {
         return $this->render('view', [
-            'model' => $this->findModel($id),
-        ]);
-    }
-
-    /**
-     * Displays a single Article model.
-     * @param integer $id
-     * @return mixed
-     */
-    public function actionShow($id)
-    {
-        return $this->render('show', [
             'model' => $this->findModel($id),
         ]);
     }
